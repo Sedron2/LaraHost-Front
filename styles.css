@@ -4,8 +4,6 @@
     --color-2:  #D5EBFF;
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
-
 * {
     font-family: 'Ubuntu', sans-serif;
 }
@@ -167,7 +165,7 @@ img{
 .cta:before {
     content: "";
     position: absolute;
-    top: -8px;
+    top: -9px;
     left: 0;
     display: block;
     border-radius: 50px;
