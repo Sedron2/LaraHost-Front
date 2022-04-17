@@ -29,7 +29,7 @@
 					<a class="nav-link" href="#prices">Planes</a>
 				</li>
 				<li class="nav-item">
-					<a class="nav-link" href="#">Cont&aacute;ctenos</a>
+					<a class="nav-link" href="#contact">Cont&aacute;ctenos</a>
 				</li>
 				<li class="nav-item dropdown">
 				<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -73,7 +73,7 @@
 		</div>
 	</section>
 
-	<section id="info" class="container-fluid text-center">
+	<section id="info" class="container-fluid text-center pb-5">
 		<div class="container py-3">
 			<!--<h2 class="main-text text-center">Contamos con:</h2>-->
 			<div class="row">
@@ -89,7 +89,7 @@
 			</div>
 		</div>
 
-		<div class="container" id="prices">
+		<div class="container py-3" id="prices">
 			<h1 class="text-undlnd">Precios y planes:</h1>
 			<div class="row">
 				<div class="col-12 col-sm-6 col-xl-3">
@@ -275,6 +275,51 @@
 			</div>
 		</div>
 	</section>
+
+	<section id="contact" class="container-fluid py-5">
+		<div class="container h-100">
+			<h1 class="text-undlnd text-center">Cont&aacute;ctenos</h1>
+			<form action="https://formsubmit.co/soporte@larahost.net" method="POST">
+				<div class="row">
+					<div class="col-12 py-2">
+						<label for="contactPlan" class="form-label">Plan de su inter&eacute;s:</label>
+						<select class="form-select" id="contactPlan" aria-label=".form-select-sm example" style="cursor: pointer;" name="plan">
+							<option selected>Seleccione el plan</option>
+							<option value="1">Plan b&aacute;sico</option>
+							<option value="2">Plan Standard</option>
+							<option value="3">Plan Profesional</option>
+							<option value="4">Plan Master</option>
+						  </select>
+					</div>
+					<div class="col-12 col-lg-6">
+						<label for="contactEmail" class="form-label">Refiéranos su nombre:</label>
+						<input type="text" name="name" id="contactEmail" class="w-100 form-control" placeholder="Con quien contactarnos" required>
+					</div>
+					<div class="col-12 col-lg-6">
+						<label for="contactNum" class="form-label">Nro. de tel&eacute;fono:</label>
+						<input type="number" class="form-control" id="contactNum" placeholder="123456789" name="num">
+					</div>
+				</div>
+				<div class="row py-3">
+					<div class="col-12">
+						<div class="form-floating">
+							<textarea class="form-control" style="min-height: 200px;" placeholder="Escriba aquí" id="floatingTextarea" name="preguntas"></textarea>
+							<label for="floatingTextarea"><small>Indicaciones o preguntas</small></label>
+						  </div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-12 text-center">
+					<button type="submit" id="submit">Enviar</button>
+				</div>
+		   </form>
+		</div>
+	</section>
+
+	<section id="footer" class="container-fluid">
+
+	</section>
+
 
 
 	<!--<script src="./script.js"></script>-->

@@ -1,7 +1,8 @@
 :root {
-    --nav-color: #f1f1f1;
+    --nav-color: #eef1f5;
     --color-1: #5694D1;
     --color-2:  #D5EBFF;
+    --color-3: #234567;
 }
 
 * {
@@ -16,6 +17,12 @@ nav {
 img{ 
     max-width: 80%;
     height: auto;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
 }
 
 
@@ -34,7 +41,7 @@ img{
 }
 
 #main-text{
-    animation: fadeIn 2.5s;
+    animation: fadeIn 4s;
     display: flex;
     align-items: center;
 }
@@ -127,6 +134,39 @@ img{
     align-items: center;
 }
 
+
+#contact {
+    min-height: 400px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+/*    align-items: center;*/
+}
+
+#submit {
+    border: 2px solid var(--color-1);
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-radius: 10px;
+    width: 100%;
+    max-width: 200px;
+    background-color: transparent;
+    color: var(--color-3);
+    transition-duration: .4s;
+    font-weight: 6  00;
+}
+
+#submit:hover{
+    border: 2px solid transparent;
+    background-color: var(--color-2);
+}
+
+
+#footer {
+    min-height: 150px;
+    background-color: var(--nav-color);
+}
+
 @media (max-width: 576px) { /* */
     #main {
         background-image: url("images/server-min-op3.png");
@@ -138,12 +178,7 @@ img{
         margin: 0;
         margin-top: 30px;
     }
-
-    .cta:before {
-        background: #122f5d;
-        }
 }
-
 
 
 
@@ -191,7 +226,7 @@ img{
     fill: none;
     stroke-linecap: round;
     stroke-linejoin: round;
-    stroke: #234567;
+    stroke: var(--color-3);
     stroke-width: 2;
     transform: translateX(-5px);
     transition: all 0.3s ease;
