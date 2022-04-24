@@ -167,6 +167,18 @@ input::-webkit-inner-spin-button {
     background-color: var(--nav-color);
 }
 
+#icons {
+    position: fixed;
+    right: 6px;
+    bottom: 6px;
+}
+
+#icons div {
+    height: 70px;
+    width: 70px;
+}
+
+
 @media (max-width: 576px) { /* */
     #main {
         background-image: url("images/server-min-op3.png");
